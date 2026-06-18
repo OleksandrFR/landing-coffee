@@ -54,8 +54,8 @@ a:hover{
 
 /* Main Content */
 .hero{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
     text-align: left;
     margin-top: 50px;
     margin-left: 20px;
@@ -109,7 +109,8 @@ a:hover{
     margin-top: 50px;
 }
 .product-grid{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: flex-start;
     margin-top: 80px;
     margin-left: 20px;
@@ -122,6 +123,8 @@ a:hover{
     color: #ffffff;
 }
 .product-card{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     background-color: #141414;
     padding: 20px;
     border-radius: 10px;
